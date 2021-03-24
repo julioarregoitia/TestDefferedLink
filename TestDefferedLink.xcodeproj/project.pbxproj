@@ -16,6 +16,8 @@
 		8CE6314D260BB6CA00563ED4 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8CE6314C260BB6CA00563ED4 /* FacebookCore */; };
 		8CE6314F260BB6CA00563ED4 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 8CE6314E260BB6CA00563ED4 /* FacebookLogin */; };
 		8CE63151260BB6CA00563ED4 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 8CE63150260BB6CA00563ED4 /* FacebookShare */; };
+		8CE63154260BB9F500563ED4 /* AppDelegate+FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE63153260BB9F500563ED4 /* AppDelegate+FB.swift */; };
+		8CE63158260BBC3100563ED4 /* ViewModelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE63157260BBC3100563ED4 /* ViewModelContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		8CE6313F260BB41000563ED4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CE63142260BB41000563ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE63144260BB41000563ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CE63153260BB9F500563ED4 /* AppDelegate+FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+FB.swift"; sourceTree = "<group>"; };
+		8CE63157260BBC3100563ED4 /* ViewModelContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				8CE63136260BB40F00563ED4 /* AppDelegate.swift */,
+				8CE63153260BB9F500563ED4 /* AppDelegate+FB.swift */,
 				8CE63138260BB40F00563ED4 /* SceneDelegate.swift */,
 				8CE6313A260BB40F00563ED4 /* ContentView.swift */,
 				8CE6313C260BB41000563ED4 /* Assets.xcassets */,
 				8CE63141260BB41000563ED4 /* LaunchScreen.storyboard */,
 				8CE63144260BB41000563ED4 /* Info.plist */,
 				8CE6313E260BB41000563ED4 /* Preview Content */,
+				8CE63157260BBC3100563ED4 /* ViewModelContentView.swift */,
 			);
 			path = TestDefferedLink;
 			sourceTree = "<group>";
@@ -161,6 +167,8 @@
 			files = (
 				8CE63137260BB40F00563ED4 /* AppDelegate.swift in Sources */,
 				8CE63139260BB40F00563ED4 /* SceneDelegate.swift in Sources */,
+				8CE63158260BBC3100563ED4 /* ViewModelContentView.swift in Sources */,
+				8CE63154260BB9F500563ED4 /* AppDelegate+FB.swift in Sources */,
 				8CE6313B260BB40F00563ED4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

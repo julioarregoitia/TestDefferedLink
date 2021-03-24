@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = ViewModelContentView()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Button("Login with Facebook") {
+                self.viewModel.fbLogginButton()
+            }
+            
+            Text(viewModel.facebookResultString)
+        }
     }
 }
 
