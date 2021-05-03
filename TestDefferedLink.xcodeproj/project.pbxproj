@@ -70,11 +70,11 @@
 				8CE63153260BB9F500563ED4 /* AppDelegate+FB.swift */,
 				8CE63138260BB40F00563ED4 /* SceneDelegate.swift */,
 				8CE6313A260BB40F00563ED4 /* ContentView.swift */,
+				8CE63157260BBC3100563ED4 /* ViewModelContentView.swift */,
 				8CE6313C260BB41000563ED4 /* Assets.xcassets */,
 				8CE63141260BB41000563ED4 /* LaunchScreen.storyboard */,
 				8CE63144260BB41000563ED4 /* Info.plist */,
 				8CE6313E260BB41000563ED4 /* Preview Content */,
-				8CE63157260BBC3100563ED4 /* ViewModelContentView.swift */,
 			);
 			path = TestDefferedLink;
 			sourceTree = "<group>";
@@ -310,17 +310,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestDefferedLink/Preview Content\"";
-				DEVELOPMENT_TEAM = U3K9U8ZS5F;
+				DEVELOPMENT_TEAM = NQ84PMKKQK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestDefferedLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AzzTeamCuba.TestDefferedLink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmartTopUp.CubatelDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,17 +332,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestDefferedLink/Preview Content\"";
-				DEVELOPMENT_TEAM = U3K9U8ZS5F;
+				DEVELOPMENT_TEAM = NQ84PMKKQK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestDefferedLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AzzTeamCuba.TestDefferedLink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmartTopUp.CubatelDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

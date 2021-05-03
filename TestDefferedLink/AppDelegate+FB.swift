@@ -15,11 +15,14 @@ extension AppDelegate {
     
     func setupFB(application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         
+        Settings.isAdvertiserIDCollectionEnabled = false
+        Settings.setAdvertiserTrackingEnabled(false)
+        Settings.isAutoLogAppEventsEnabled = false
         
         // Initialize the Facebook SDK
-        ApplicationDelegate.initializeSDK(nil)
-        
-        if #available(iOS 14.5, *) {
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+
+        if #available(iOS 14.5.1, *) {
             
             ATTrackingManager.requestTrackingAuthorization { status in
                 
@@ -29,7 +32,9 @@ extension AppDelegate {
                 switch status {
                 case .authorized:
                     
-                    self.setupDefferedLink()
+                    DispatchQueue.main.async {
+                        self.setupDefferedLink()
+                    }
                     // Tracking authorization dialog was shown
                     // and we are authorized
                     print("Authorized")
@@ -48,13 +53,8 @@ extension AppDelegate {
                 @unknown default:
                     print("Unknown")
                 }
-            }        } else {
-                if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
-                    let id = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-                    print(id)
-                    setupDefferedLink()
-                }
             }
+        }
     }
     
     /// Set the trackings to true after the permission has been granted
@@ -70,8 +70,7 @@ extension AppDelegate {
             if let url = url { // URL here is always nil
                 print(url)
             }
-            // Error also is always nil. Sometimes it gave me "The `setAdvertiserTrackingEnabled` must be true"
-            // But it has been set to true a few lines before
+            // Error also is always nil.
             print(error as Any)
         }
         
